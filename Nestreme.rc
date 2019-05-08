@@ -1,0 +1,149 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Run\tCtrl+R",                ID_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "&Open Rom\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "&Free Rom\tCtrl+F",           ID_FILE_FREE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl+Q",               ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Memory\tAlt+1",              ID_EDIT_MEMORY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Memory\tAlt+5",              ID_VIEW_MEMORY
+        MENUITEM "Disassembly\tAlt+8",          ID_VIEW_DISASSEMBLY
+    END
+    POPUP "&Debug"
+    BEGIN
+        MENUITEM "&Go\tF5",                     ID_DEBUG_GO
+        MENUITEM "Restart\tShift+F5",           ID_DEBUG_RESTART
+        MENUITEM "&Break\tCtrl+F5",             ID_DEBUG_BREAK
+        MENUITEM SEPARATOR
+        MENUITEM "Step &Into\tF11",             ID_DEBUG_STEPINTO
+        MENUITEM "Step &Over\tF10",             ID_DEBUG_STEPOVER
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILEHORIZONTALLY
+        MENUITEM "&Tile Vertically",            ID_WINDOW_TILEVERTICALLY
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&About Nestreme",             ID_HELP_ABOUTNESTREME
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINACCEL ACCELERATORS 
+BEGIN
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         ID_DEBUG_STEPOVER,      VIRTKEY, NOINVERT
+    VK_F11,         ID_DEBUG_STEPINTO,      VIRTKEY, NOINVERT
+    VK_F5,          ID_DEBUG_GO,            VIRTKEY, NOINVERT
+    VK_F5,          ID_DEBUG_BREAK,         VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_DEBUG_RESTART,       VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CODE_COLUMN0        "PC"
+    IDS_CODE_COLUMN1        "Machine Code"
+    IDS_CODE_COLUMN2        "Instruction"
+    IDS_CODE_COLUMN3        "Memory Contents"
+    IDS_REGS_COLUMN0        "Register"
+    IDS_REGS_COLUMN1        "Value"
+    IDS_MEMORY_MAIN         "Main"
+    IDS_MEMORY_STACK        "Stack"
+    IDS_MEMORY_PRGROM       "PRG-ROM"
+    IDS_MEMORY_PPU          "PPU"
+    IDS_MEMORY_SPRITE       "Sprite"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Nestreme - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~2\THUNDE~1\LOCALS~1\Temp\RSP7C.bat" with contents
+[
+@echo off
+D:\masm32\bin\ml /c /Cx /coff /nologo /Zi /Fl.\Debug\Cpu.lst /Fo.\Debug\Cpu.obj .\Cpu.asm
+]
+Creating command line "C:\DOCUME~2\THUNDE~1\LOCALS~1\Temp\RSP7C.bat"
+Creating temporary file "C:\DOCUME~2\THUNDE~1\LOCALS~1\Temp\RSP7D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FA /Fa"Debug/" /FR"Debug/" /Fp"Debug/Nestreme.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\CODE\C++\WINAPI\Nestreme\Nestreme.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~2\THUNDE~1\LOCALS~1\Temp\RSP7D.tmp" 
+Performing Custom Build Step on .\Cpu.asm
+ Assembling: .\Cpu.asm
+Creating temporary file "C:\DOCUME~2\THUNDE~1\LOCALS~1\Temp\RSP7E.tmp" with contents
+[
+comctl32.lib comdlg32.lib kernel32.lib user32.lib gdi32.lib winspool.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Nestreme.pdb" /debug /machine:I386 /out:"Debug/Nestreme.exe" /pdbtype:sept 
+".\Debug\Io.obj"
+".\Debug\Nestreme.obj"
+".\Debug\PrintInstrToString.obj"
+".\Debug\Nestreme.res"
+".\Debug\Cpu.obj"
+]
+Creating command line "link.exe @C:\DOCUME~2\THUNDE~1\LOCALS~1\Temp\RSP7E.tmp"
+<h3>Output Window</h3>
+Compiling...
+Nestreme.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Nestreme.bsc"  ".\Debug\Io.sbr" ".\Debug\Nestreme.sbr" ".\Debug\PrintInstrToString.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Nestreme.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
